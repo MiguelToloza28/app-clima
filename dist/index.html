@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>App del Clima</title>
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 id="weather-location" class="h3">Ciudad / País</h1>
+                        <h3 id="weather-description" class="h4">Descripción</h3>
+                        <h3 id="weather-string">Temperatura</h3>
+                        <ul class="list-group mt-3">
+                            <li id="weather-humidity" class="list-group-item">Humedad</li>
+                            <li id="weather-wind" class="list-group-item">Viento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="w-form">
+                            <div class="form-goup"><input id="city" class="form-control" placeholder="Ciudad" autofocus>
+                            </div>
+                            <div class="form-goup"><input id="countryCode" class="form-control"
+                                    placeholder="Codigo País: ej: MX"></div>
+                            <div class="form-group mt-2"><button class="btn btn-dark btn-block"
+                                    id="w-change-btn">Guardar Cambios</button></div>
+                        </form>
+                    </div>
+                    <p>Desarrollado por: <a href="http://miguel-toloza-web.netlify.app">Miguel Toloza</a> &copy;</p>
+                </div>
+                <div class="lds-ellipsis" id="loading">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
